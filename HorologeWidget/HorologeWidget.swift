@@ -58,24 +58,47 @@ struct HorologeWidgetEntryView : View {
                     .font(.largeTitle)
             }
 
-            HStack(spacing: 25) {
-                VStack {
-                    Text("San Francisco")
-                        .font(.headline)
-                    Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: "US/Pacific")))")
-                        .font(.title)
+            VStack(spacing: 10) {
+                HStack(spacing: 12) {
+                    VStack {
+                        Text("San Francisco")
+                            .font(.headline)
+                        Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: \"US/Pacific\")))")
+                            .font(.body)
+                    }
+                    VStack {
+                        Text("NYC")
+                            .font(.headline)
+                        Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: \"America/New_York\")))")
+                            .font(.body)
+                    }
+                    VStack {
+                        Text("London")
+                            .font(.headline)
+                        Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: \"Europe/London\")))")
+                            .font(.body)
+                    }
                 }
-                VStack {
-                    Text("London")
-                        .font(.headline)
-                    Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: "Europe/London")))")
-                        .font(.title)
-                }
-                VStack {
-                    Text("Amsterdam")
-                        .font(.headline)
-                    Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: "Europe/Amsterdam")))")
-                        .font(.title)
+
+                HStack(spacing: 12) {
+                    VStack {
+                        Text("Hyderabad")
+                            .font(.headline)
+                        Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: \"Asia/Kolkata\")))")
+                            .font(.body)
+                    }
+                    VStack {
+                        Text("Beijing")
+                            .font(.headline)
+                        Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: \"Asia/Shanghai\")))")
+                            .font(.body)
+                    }
+                    VStack {
+                        Text("Tokyo")
+                            .font(.headline)
+                        Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: \"Asia/Tokyo\")))")
+                            .font(.body)
+                    }
                 }
             }
         }
