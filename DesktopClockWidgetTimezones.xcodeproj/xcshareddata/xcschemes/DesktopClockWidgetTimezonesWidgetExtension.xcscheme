@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5238D1212596D0EB00B7A068"
-               BuildableName = "HorologeWidgetExtension.appex"
-               BlueprintName = "HorologeWidgetExtension"
-               ReferencedContainer = "container:Horologe.xcodeproj">
+               BuildableName = "DesktopClockWidgetTimezonesWidgetExtension.appex"
+               BlueprintName = "DesktopClockWidgetTimezonesWidgetExtension"
+               ReferencedContainer = "container:DesktopClockWidgetTimezones.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5238D0812596CEB900B7A068"
-               BuildableName = "Horologe.app"
-               BlueprintName = "Horologe"
-               ReferencedContainer = "container:Horologe.xcodeproj">
+               BuildableName = "DesktopClockWidgetTimezones.app"
+               BlueprintName = "DesktopClockWidgetTimezones"
+               ReferencedContainer = "container:DesktopClockWidgetTimezones.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5238D0812596CEB900B7A068"
-            BuildableName = "Horologe.app"
-            BlueprintName = "Horologe"
-            ReferencedContainer = "container:Horologe.xcodeproj">
+            BuildableName = "DesktopClockWidgetTimezones.app"
+            BlueprintName = "DesktopClockWidgetTimezones"
+            ReferencedContainer = "container:DesktopClockWidgetTimezones.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -97,9 +97,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5238D0812596CEB900B7A068"
-            BuildableName = "Horologe.app"
-            BlueprintName = "Horologe"
-            ReferencedContainer = "container:Horologe.xcodeproj">
+            BuildableName = "DesktopClockWidgetTimezones.app"
+            BlueprintName = "DesktopClockWidgetTimezones"
+            ReferencedContainer = "container:DesktopClockWidgetTimezones.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

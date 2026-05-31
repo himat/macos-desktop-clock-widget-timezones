@@ -1,6 +1,6 @@
 //
-//  HorologeWidget.swift
-//  HorologeWidget
+//  DesktopClockWidgetTimezonesWidget.swift
+//  DesktopClockWidgetTimezonesWidget
 //
 //  Created by John Britton on 12/25/20.
 //
@@ -37,7 +37,7 @@ struct SimpleEntry: TimelineEntry {
     let date: Date
 }
 
-struct HorologeWidgetEntryView : View {
+struct DesktopClockWidgetTimezonesWidgetEntryView : View {
     var entry: Provider.Entry
 
     func timeString(date: Date, timeZone: TimeZone?) -> String {
@@ -63,19 +63,19 @@ struct HorologeWidgetEntryView : View {
                     VStack {
                         Text("San Francisco")
                             .font(.headline)
-                        Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: \"US/Pacific\")))")
+                        Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: "US/Pacific")))")
                             .font(.body)
                     }
                     VStack {
                         Text("NYC")
                             .font(.headline)
-                        Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: \"America/New_York\")))")
+                        Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: "America/New_York")))")
                             .font(.body)
                     }
                     VStack {
                         Text("London")
                             .font(.headline)
-                        Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: \"Europe/London\")))")
+                        Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: "Europe/London")))")
                             .font(.body)
                     }
                 }
@@ -84,44 +84,56 @@ struct HorologeWidgetEntryView : View {
                     VStack {
                         Text("Hyderabad")
                             .font(.headline)
-                        Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: \"Asia/Kolkata\")))")
+                        Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: "Asia/Kolkata")))")
                             .font(.body)
                     }
                     VStack {
                         Text("Beijing")
                             .font(.headline)
-                        Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: \"Asia/Shanghai\")))")
+                        Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: "Asia/Shanghai")))")
                             .font(.body)
                     }
                     VStack {
                         Text("Tokyo")
                             .font(.headline)
-                        Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: \"Asia/Tokyo\")))")
+                        Text("\(timeString(date: entry.date, timeZone: TimeZone(identifier: "Asia/Tokyo")))")
                             .font(.body)
                     }
                 }
             }
         }
+        .widgetContainerBackground()
+    }
+}
+
+extension View {
+    @ViewBuilder
+    func widgetContainerBackground() -> some View {
+        if #available(macOSApplicationExtension 14.0, *) {
+            self.containerBackground(.fill.tertiary, for: .widget)
+        } else {
+            self
+        }
     }
 }
 
 @main
-struct HorologeWidget: Widget {
-    let kind: String = "HorologeWidget"
+struct DesktopClockWidgetTimezonesWidget: Widget {
+    let kind: String = "DesktopClockWidgetTimezonesWidget"
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            HorologeWidgetEntryView(entry: entry)
+            DesktopClockWidgetTimezonesWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("Horologe")
+        .configurationDisplayName("DesktopClockWidgetTimezones")
         .description("Displays a digital clock.")
         .supportedFamilies([.systemMedium])
     }
 }
 
-struct HorologeWidget_Previews: PreviewProvider {
+struct DesktopClockWidgetTimezonesWidget_Previews: PreviewProvider {
     static var previews: some View {
-        HorologeWidgetEntryView(entry: SimpleEntry(date: Date()))
+        DesktopClockWidgetTimezonesWidgetEntryView(entry: SimpleEntry(date: Date()))
             .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }

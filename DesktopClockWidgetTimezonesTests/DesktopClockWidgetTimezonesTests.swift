@@ -1,14 +1,14 @@
 //
-//  HorologeTests.swift
-//  HorologeTests
+//  DesktopClockWidgetTimezonesTests.swift
+//  DesktopClockWidgetTimezonesTests
 //
 //  Created by John Britton on 12/25/20.
 //
 
 import XCTest
-@testable import Horologe
+@testable import DesktopClockWidgetTimezones
 
-class HorologeTests: XCTestCase {
+class DesktopClockWidgetTimezonesTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

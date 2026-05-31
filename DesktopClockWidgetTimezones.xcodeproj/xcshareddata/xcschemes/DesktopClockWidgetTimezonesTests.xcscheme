@@ -17,9 +17,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5238D0932596CEBE00B7A068"
-               BuildableName = "HorologeTests.xctest"
-               BlueprintName = "HorologeTests"
-               ReferencedContainer = "container:Horologe.xcodeproj">
+               BuildableName = "DesktopClockWidgetTimezonesTests.xctest"
+               BlueprintName = "DesktopClockWidgetTimezonesTests"
+               ReferencedContainer = "container:DesktopClockWidgetTimezones.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
