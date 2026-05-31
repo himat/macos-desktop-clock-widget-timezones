@@ -1,4 +1,4 @@
-## A timezone clock wdiget for macOS
+## A timezone clock widget for macOS
 For Notification Center and Desktop
 
 ### Installation
@@ -19,12 +19,11 @@ Next, on desktop or notification center, click the "Edit Widgets" button. Select
 
 You have successfully installed the widget.
 
-![Widget Screenshot](https://user-images.githubusercontent.com/123345/103148354-bb36dc80-472c-11eb-8d63-be7e9797f846.png)
+Here's what it looks like on the desktop:
 
-
-### Building
+<img width="352" height="168" alt="image" src="https://github.com/user-attachments/assets/1c93ca5d-1cc9-4a84-9a16-8cd0233b5f75" />
 
 
 ### Notes
 
-Forked from the original project, but its time zones were hardcoded to ones I didn't want, so here's a better fork.
+Forked from the original project [here](https://github.com/johndbritton/horologe/issues/4), but its time zones were hardcoded to ones I didn't want, so here's a better fork.
